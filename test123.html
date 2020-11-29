@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Satisfactory Survey Form</title>
+	<h1 id="title">Satisfactory Survey Form</h1>
+	<p id="description">
+		Thanks for taking the time to help us improve our quality
+	</p>
+	<link rel="stylesheet" type="text/css" href="test123.css" />
+</head>
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+
+<body>
+	<form id="survey-form">
+		<label for="name" id="name-label" class="label">Name</label>
+		<input type="text" id="name" placeholder="Enter your name" required />
+		<label for="email" id="email-label" class="label">Email</label>
+		<input type="email" id="email" placeholder="Enter your Email" required />
+		<label for="number" id="number-label" class="label">How old are you?</label>
+		<input type="number" id="number" min="0" max="100" placeholder="Age" required />
+
+		<label for="dropdown" class="label">Gender</label>
+		<select id="dropdown" name="Choose Your Pokemon!" required>
+			<option value="Choose Your Pokemon!" disabled selected>Choose Your Pokemon!</option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="apachehelicopter">Apache Helicopter</option>
+			<option value="other">Other</option>
+		</select><br />
+		<label class="label">Would you recommend us to your friends and relatives?</label>
+		<div class="radio-flex">
+			<label for="yes" class="boxes"><input type="radio" name="recommend" id="yes"
+					value="yes" />Absolutely</label>
+			<label for="no" class="boxes"><input type="radio" name="recommend" id="no" value="no" />Nah</label>
+			<label for="probably" class="boxes"><input type="radio" name="recommend" id="yes"
+					value="yes" />Probably</label>
+		</div>
+
+		<label class="label">What would you like to see improved?</label>
+		<div class="radio-flex">
+			<label for="taste" class="boxes"><input type="checkbox" name="suggestionbox" id="taste" value="taste" />The
+				taste of our foods</label>
+			<label for="service" class="boxes"><input type="checkbox" name="suggestionbox" id="service"
+					value="service" />Our service and hospitality</label>
+			<label for="price" class="boxes"><input type="checkbox" name="suggestionbox" id="price" value="price" />The
+				cost of our menu</label>
+			<label for="menu" class="boxes"><input type="checkbox" name="suggestionbox" id="menu" value="menu" />The
+				lack of option in our menu</label>
+		</div>
+		<label for="textholder" class="label">Please give us your thoughts and suggestions</label>
+		<textarea id="textholder" placeholder="Let us know what you think! :)" class="input"></textarea><br />
+		<input type="submit" id="submit" />
+	</form>
+</body>
+
+</html>
